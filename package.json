@@ -1,0 +1,11 @@
+{
+  "name": "crowdfunding-product-page-main",
+  "version": "1.0.0",
+  "description": "This is a fontend mentor challenge",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Patric Gekoski",
+  "license": "ISC"
+}
