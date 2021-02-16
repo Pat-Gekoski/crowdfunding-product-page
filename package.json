@@ -4,8 +4,14 @@
   "description": "This is a fontend mentor challenge",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch:sass" : "node-sass sass/main.scss css/styles.css -w",
+    "devserver" : "live-server",
+    "start" : "npm-run-all --parallel devserver watch:sass"
   },
   "author": "Patric Gekoski",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5"
+  }
 }
