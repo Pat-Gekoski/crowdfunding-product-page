@@ -1,0 +1,26 @@
+.button {
+   border: none;
+   border-radius: 100px;
+   // padding: 2rem 4.5rem;
+   height: 5.6rem;
+   width: 21.4rem;
+
+   &--main {
+      background-color: $color-primary;
+      color: $color-white;
+      font-weight: 700;
+      transition: background-color .2s;
+      backface-visibility: hidden;
+
+      &:hover {
+         background-color: darken($color-primary, 5%);
+         box-shadow: 0 1rem 2rem rgba($color-black, .15);
+         transform: translateY(-.2rem);
+      }
+
+      &:active {
+         transform: translateY(-.1rem);
+         box-shadow: 0 .5rem 1rem rgba($color-black, -.2rem);
+      }
+   }
+}

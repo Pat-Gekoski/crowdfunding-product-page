@@ -1,0 +1,44 @@
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 12.8rem;
+	padding: 0 2rem;
+
+	ul {
+
+		@media only screen and (max-width: 600px){
+			display: none;
+		}
+
+		li {
+         display: inline-block;
+
+			&:not(:last-child) {
+				margin-right: 3.5rem;
+			}
+
+			a:link,
+         a:visited {
+				color: $color-white;
+				font-size: 1.3rem;
+			}
+
+         a:hover {
+            color: $color-primary; // todo choose a better color
+         }
+		}
+	}
+
+	&__mobile-menu {
+		display: none;
+
+		@media only screen and (max-width: 600px){
+			display: inline-block;
+		}
+	}
+
+	&__logo img {
+		height: 2rem;
+	}
+}

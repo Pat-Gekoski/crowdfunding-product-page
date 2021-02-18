@@ -1,0 +1,11 @@
+.header {
+   height: 40rem;
+   background: url(../../images/image-hero-desktop.jpg);
+   background-size: cover;
+   background-position: top;
+
+   &__background-filter {
+      height: 100%;
+      background-color: rgba($color-black, .3);
+   }
+}

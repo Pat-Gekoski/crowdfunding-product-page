@@ -1,0 +1,46 @@
+.card {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: $color-white;
+   border-radius: .8rem;
+   width: 73rem;
+   margin: 0 auto;
+   padding: 4.9rem;
+
+   @media only screen and (max-width: 850px){
+      width: 90%;
+   }
+
+   @media only screen and (max-width: 720px){
+      padding: 4.9rem 2.4rem;
+   }
+
+   &__title {
+      @include primary-heading($bottom-margin: 2.2rem);
+
+      
+   }
+
+   &__text {
+      @include body-text();
+
+      @media only screen and (max-width: 720px){
+         font-size: 1.4rem;
+      }
+   }
+
+   &--intro {
+      margin-top: -9rem;
+   }
+}
+
+.card-1__button-container {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   margin-top: 4.3rem;
+   justify-content: space-between;
+}
+

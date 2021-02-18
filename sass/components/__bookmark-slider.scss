@@ -1,0 +1,39 @@
+.bookmark {
+   position: relative;
+   height: 5.6rem;
+   width: 17.4rem;
+   background-color: $color-light-gray;
+   border-radius: 100px;
+
+   // @media only screen and (max-width: 550px){
+   //    width: 12rem;
+   // }
+
+   @media only screen and (max-width: 560px){
+      width: auto;
+   }
+
+   &__icon {
+      width: auto;
+
+      img {
+         float: left;
+      }
+   }
+
+   p {
+      position: absolute;
+      right: 2.5rem;
+      top: 1.5rem;
+      font-weight: 700;
+      letter-spacing: .5px;
+      color: $color-dark-gray;
+
+      @media only screen and (max-width: 560px){
+         display: none;
+      }
+   }
+}
+
+
+

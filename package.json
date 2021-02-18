@@ -4,7 +4,7 @@
   "description": "This is a fontend mentor challenge",
   "main": "index.html",
   "scripts": {
-    "watch:sass" : "node-sass sass/main.scss css/styles.css -w",
+    "watch:sass" : "node-sass sass/*.scss css/styles.css -w",
     "devserver" : "live-server",
     "start" : "npm-run-all --parallel devserver watch:sass"
   },

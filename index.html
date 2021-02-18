@@ -11,7 +11,11 @@
 			href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap"
 			rel="stylesheet"
 		/>
-    <link rel="stylesheet" href="css/styles.css">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
 
 		<title>Frontend Mentor | Crowdfunding product page</title>
 
@@ -27,6 +31,65 @@
 		</style>
 	</head>
 	<body>
-		<header class="header"></header>
+		<header class="header">
+			<div class="header__background-filter">
+				<div class="container">
+					<div class="navigation">
+						<div class="navigation__logo">
+							<img src="./images/logo.svg" alt="Logo" />
+						</div>
+						<img
+							src="./images/icon-hamburger.svg"
+							alt="Navigation Menu"
+							class="navigation__mobile-menu"
+						/>
+						<ul>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Discover</a></li>
+							<li><a href="#">Get Started</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="container">
+			<div class="row">
+				<!-- CARD -->
+				<div class="card card--intro">
+					<img src="images/logo-mastercraft.svg" alt="" class="logo-mastercraft" />
+
+					<div class="u-center-text">
+						<h1 class="card__title">Mastercraft Bamboo Monitor Riser</h1>
+						<p class="card__text">
+							A beautiful & handcrafted monitor stand to reduce neck and eye strain.
+						</p>
+					</div>
+
+					<div class="card-1__button-container">
+						<button class="button button--main u-small-margin-right">
+							Back this project
+						</button>
+
+						<div class="bookmark">
+							<!-- <div class="bookmark__icon">
+								<img src="images/icon-bookmark.svg" alt="" class="test" />
+							</div> -->
+							<svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
+								<g fill="none" fill-rule="evenodd">
+									<circle fill="#2F2F2F" cx="28" cy="28" r="28"/>
+									<path fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z" />
+								</g>
+							</svg>
+							<p>Bookmark</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- Scripts -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script src="js/scripts.js"></script>
 	</body>
 </html>
